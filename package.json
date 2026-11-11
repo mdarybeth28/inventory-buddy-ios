@@ -1,0 +1,18 @@
+{
+  "name": "inventory-buddy-ios",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Inventory Buddy iOS — Capacitor WEB SHELL around the live myinventorybuddy.com web app, cloned from the proven Tracker / Gift Keeper recipe. Phase 1: shell + camera/photo permissions, invite-only TestFlight. Not submitted yet.",
+  "scripts": {
+    "sync": "cap sync ios",
+    "open": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/ios": "^7.4.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "typescript": "^7.0.2"
+  }
+}

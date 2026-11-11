@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+  Inventory Buddy iOS shell — local fallback page ONLY.
+  The app itself is the LIVE web app at https://myinventorybuddy.com,
+  loaded via the server.url key in capacitor.config.json (a deliberate
+  shell design — see BUDDY-IOS-STATUS.md; do NOT "fix" it to match the
+  native-first Keeper/Tracker apps). This bundled page can only appear
+  briefly while the live app loads, or when the device cannot reach it.
+  Pilots must stay signed in across launches: the Buddy page stores its
+  session in cookies (cookieAuthStorage) and the shell relies on the
+  WKWebView default data store persisting cookies + local storage.
+  Nothing in this shell clears webview storage.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory Buddy</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; background: #f4f8f4;
+         color: #2b2b2b; margin: 0; padding: 24px; line-height: 1.5; }
+  .card { background: #fff; border-radius: 14px; padding: 20px;
+          box-shadow: 0 1px 4px rgba(0,0,0,.08); text-align: center; }
+  h1 { color: #2e7d32; font-size: 20px; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  button { background: #2e7d32; color: #fff; border: 0; border-radius: 10px;
+           padding: 12px 22px; font-size: 16px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>📦 Inventory Buddy</h1>
+    <p>Loading your inventory…</p>
+    <p>Inventory Buddy needs internet — check your connection and try again.</p>
+    <button onclick="location.href='https://myinventorybuddy.com'">Try again</button>
+  </div>
+</body>
+</html>

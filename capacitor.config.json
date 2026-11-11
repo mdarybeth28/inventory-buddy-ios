@@ -1,0 +1,12 @@
+{
+  "appId": "com.marybethsfinds.inventorybuddy",
+  "appName": "Inventory Buddy",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never"
+  },
+  "server": {
+    "url": "https://myinventorybuddy.com",
+    "cleartext": false
+  }
+}
