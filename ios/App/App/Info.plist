@@ -49,5 +49,7 @@
 	<string>Inventory Buddy lets you pick label and invoice photos to read.</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
